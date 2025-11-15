@@ -1,20 +1,15 @@
-# Sales EDA + To‑Do (localStorage) Repo
+# Sales EDA 
 
 This repository contains:
 
 - notebooks/data_cleaning_and_EDA.ipynb — the notebook you provided (data cleaning & EDA).
 - sql/SQLQuery1.sql — your SQL queries (moved to the `sql/` folder).
-- todo/index.html, todo/styles.css, todo/app.js — a small To‑Do list web application that uses localStorage (works in any browser; no server required).
 - .gitignore — common ignores for Python/Jupyter and static projects.
 
 How to use
 - To view the notebook:
   1. Place `sales_data_sample.csv` in the `notebooks/` folder (if not already there).
   2. Open `notebooks/data_cleaning_and_EDA.ipynb` in JupyterLab or Jupyter Notebook.
-
-- To use the To‑Do app:
-  1. Open `todo/index.html` in a browser.
-  2. Add tasks, edit, mark complete, delete — tasks persist via `localStorage`.
 
 How to push these files to GitHub (example)
 1. Create a new GitHub repo (or use `gh` CLI):
