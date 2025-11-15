@@ -1,0 +1,25 @@
+# Python / Jupyter
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints
+
+# Environments
+.env
+.venv
+venv/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# VSCode
+.vscode/
+
+# Node / builds / logs
+node_modules/
+dist/
+npm-debug.log
+yarn-error.log
+
+# Images / outputs
+*.png

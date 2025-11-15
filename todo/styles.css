@@ -1,0 +1,47 @@
+:root{
+  --bg:#f7f7fb;
+  --card:#fff;
+  --accent:#2b6ef6;
+  --muted:#8a8f98;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
+  background:var(--bg);
+  color:#111827;
+  min-height:100vh;
+}
+.container{
+  max-width:640px;
+  margin:48px auto;
+  padding:20px;
+  background:var(--card);
+  border-radius:10px;
+  box-shadow:0 6px 20px rgba(12,20,30,0.06);
+}
+h1{margin:0 0 12px 0;font-size:1.5rem}
+#task-form{display:flex;gap:8px;margin-bottom:12px}
+#task-input{flex:1;padding:10px;border-radius:8px;border:1px solid #e6e9ee}
+#task-form button{background:var(--accent);color:#fff;border:none;padding:10px 16px;border-radius:8px;cursor:pointer}
+.task-list{list-style:none;padding:0;margin:0}
+.task{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:10px;
+  border-radius:8px;
+  margin-bottom:8px;
+  border:1px solid #f0f2f5;
+}
+.task .left{display:flex;align-items:center;gap:10px}
+.task input[type="checkbox"]{width:18px;height:18px}
+.task .title{font-size:0.95rem}
+.task.completed .title{text-decoration:line-through;color:var(--muted)}
+.task .actions{display:flex;gap:6px}
+.task .actions button{background:transparent;border:0;color:var(--muted);cursor:pointer}
+.filters{display:flex;gap:8px;margin-bottom:12px}
+.filters button{background:transparent;border:0;padding:6px 8px;border-radius:6px;cursor:pointer;color:var(--muted)}
+.filters button.active{background:rgba(43,110,246,0.12);color:var(--accent)}
+.footer{display:flex;justify-content:space-between;align-items:center;margin-top:12px;color:var(--muted)}
+.footer button{background:transparent;border:0;color:var(--muted);cursor:pointer}
